@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingRight="10dp"
+    tools:context="com.todo.view.home.ToDoHomeActivity">
+
+    <ListView
+        android:id="@+id/my_to_do_list"
+        android:layout_width="match_parent"
+        android:layout_above="@id/add_to_do"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <Button
+        android:id="@+id/add_to_do"
+        android:onClick="addNewTodo"
+        android:text="@string/add_to_do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>
